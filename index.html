@@ -13,18 +13,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': '320px',
+                    'md': '426px',
+                    'lg': '1025px',
+                    'xl': '1441px',
+                    '2xl': '1921px',
+                },
+                extend: {
+               }
+            }
+        }
+    </script>
+
 </head>
 
-<body style='font-family: "Archivo", sans-serif;' class="overflow-x-hidden">
+<body style='font-family: "Archivo", sans-serif;'>
 
     <!--Wrapper-->
-    <div class="max-w-full mx-auto ">
+    <div class=" mx-auto overflow-x-hidden ">
         <!--Haeader/Navbar Section-->
         <div
-            class="max-w-full w-full h-[179px] flex flex-col mx-auto relative max-[1440px]:h-[176px] max-[744px]:h-[213px] max-[375px]:max-h-[266px]">
+            class="max-w-screen w-full h-[179px] flex flex-col  max-[1440px]:h-[176px] max-[744px]:h-[213px] max-[375px]:max-h-[266px]">
             <!--Utility bar-->
             <div
-                class="max-w-full h-[56px] bg-neutral-800 text-gray-200 px-20 py-4 justify-between flex max-[1440px]:h-[53px] max-[1440px]:w-[1440px] max-[744px]:w-[744px] max-[744px]:px-6 max-[744px]:gap-6 md:w-[375px] max-[375px]:max-h-[114px] max-[375px]:max-w-[375px] max-[375px]:w-full max-[375px]:gap-4 max-[375px]:flex-col md:w-full">
+                class="max-w-full w-full h-[56px] bg-neutral-800 text-gray-200 px-20 py-4 justify-between flex max-[1440px]:h-[53px] max-[744px]:px-6 max-[744px]:gap-6 max-[375px]:max-h-[114px] max-[375px]:gap-4 max-[375px]:flex-col">
                 <div
                     class="w-[658px] h-[24px] flex gap-[8px] text-[16px] max-[1440px]:w-[577px] max-[1440px]:max-h-[21px] max-[1440px]:text-[14px] max-[375px]:flex-col max-[375px]:gap-[4px] max-[375px]:h-[46px] max-[375px]:w-[343px]">
                     <p
@@ -38,12 +55,12 @@
                         the Replay</a>
                 </div>
 
-                <div class="w-[666px] h-[24px] flex gap-[32px] max-[1440px]:w-[563px] max-[1440px]:h-[21px] ">
+                <div class="w-[666px] h-[24px] flex xl:gap-[32px] lg:gap-[16px] max-[1440px]:w-[563px] max-[1440px]:h-[21px] justify-end ">
                     <div
-                        class="w-[542px] h-[24px] 2xl:gap-[32px] flex text-[16px] leading-[150%] tracking-[0px] hidden max-[1440px]:w-[439px] xl:gap-[16px] max-[1440px]:text-[14px] xl:block ">
+                        class="w-[542px] h-[24px] gap-[32px] xl:gap-[32px] flex xl:text-[16px] leading-[150%] tracking-[0px] hidden min-[1233px]:flex max-[1440px]:w-[439px] max-[1440px]:text-[14px] lg:text-[14px] lg:gap-[16px]">
                         <a href="" class="">My Downloads</a>
                         <a href="" class="">Upgarde Center</a>
-                        <a href="" class="">My Customer Portal</a>
+                        <a href="" class=" ">My Customer Portal</a>
                         <a href="" class="">Contact Us</a>
                     </div>
 
@@ -58,12 +75,12 @@
 
             <!--Navbar-->
             <div
-                class="max-w-[1920px] w-full h-[70px] mx-auto justify-between px-[196px] py-[16px] bg-[hsla(0,0%,100%,0.36)] backdrop-blur-[32px] flex max-[1440px]:px-[80px] max-[1440px]:h-[70px] max-[744px]:px-6 max-[375px]:h-[62px] max-[375px]:px-4 max-[375px]:py-3">
+                class="max-w-[1920px] w-full h-[70px] mx-auto justify-between px-[196px] py-[16px] bg-[hsla(0,0%,100%,0.36)] backdrop-blur-[32px] flex max-[1440px]:px-[80px] max-[1440px]:h-[70px] max-[1200px]:px-20 max-[744px]:px-6 max-[375px]:h-[62px] max-[375px]:px-4 max-[375px]:py-3">
                 <div class="w-[280px] h-[24px] flex flex-col">
                     <img src="/images/logoimg.png" class="w-[280px] h-[24px]" alt="rad logo">
                 </div>
 
-                <div class="w-[495px] h-[21px] flex gap-[24px] max-[744px]:hidden max-[375px]:hidden">
+                <div class="w-[495px] h-[21px] my-auto min-[1200px]:flex gap-[24px] hidden  min-[1200px]:flex">
                     <a href=""
                         class="w-[77px] h-[21px] flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal align-middle">Products
                         <img src="/images/expand_more_black_24dp 1.png" class="w-[16px] h-[16px]" alt="">
@@ -86,17 +103,17 @@
                 </div>
 
                 <div
-                    class="w-[280px] h-[38px] flex gap-[8px] font-medium text-[14px] leading-[22px] tracking-[0px] max-[744px]:w-[320px] max-[375px]:w-[139px]">
+                    class="w-[280px] h-[38px] flex gap-[8px] font-medium text-[14px] leading-[22px] tracking-[0px] max-[1200px]:w-[320px] max-[375px]:w-[139px]">
                     <button
-                        class="px-[16px] py-[8px] flex gap-[10px] border-none max-[744px]:w-[76px] max-[375px]:hidden ">SignIn</button>
+                        class="px-[16px] py-[8px] flex gap-[10px] border-none max-[1200px]:w-[76px] max-[375px]:hidden">SignIn</button>
                     <button
-                        class="px-[16px] py-[8px] flex gap-[10px] border border-neutral-800 rounded-[8px] max-[744px]:w-[92px] max-[375px]:hidden">Buy
+                        class="px-[16px] py-[8px] flex gap-[10px] border border-neutral-800 rounded-[8px] max-[1200px]:w-[92px] max-[375px]:hidden">Buy
                         Now</button>
                     <button
-                        class="px-[16px] py-[8px] flex gap-[10px] border-white rounded-[8px] text-white bg-neutral-800 max-[744px]:w-[92px]">Free
+                        class="px-[16px] py-[8px] flex gap-[10px] border-white rounded-[8px] text-white bg-neutral-800 max-[1200px]:w-[92px]">Free
                         Trial</button>
                     <button
-                        class="text-neutral-600 max-[1920px]:hidden max-[1440px]:hidden max-[744px]:block justify-end w-[24px] h-[24px] px-4 py-2 2xl:hidden"><i
+                        class="text-neutral-600 block justify-end w-[24px] h-[24px] px-4 py-2 min-[1200px]:hidden"><i
                             class="fa-solid fa-bars"></i></button>
                 </div>
             </div>
@@ -125,8 +142,7 @@
         </div>
 
         <!--Main Section-->
-        <div
-            class="max-w-[1920px] w-full max-h-[7467px] relative top-[100px] gap-[128px] flex flex-col mx-auto z-10 max-[1440px]:top-[105px] max-[1440px]:h-[7681px] max-[744px]:top-[50px] max-[744px]:gap-[80px] max-[744px]:h-[8930px] max-[375px]:top-[314px] max-[375px]:h-[11607px] max-[375px]:gap-[80px]">
+        <div class="max-w-[1920px] w-full max-h-[7467px] relative top-[100px] gap-[128px] flex flex-col mx-auto z-10 max-[1440px]:top-[105px] max-[1440px]:h-[7681px] max-[744px]:top-[50px] max-[744px]:gap-[80px] max-[744px]:h-[8930px] max-[375px]:top-[314px] max-[375px]:h-[11607px] max-[375px]:gap-[80px]">
 
             <!--Hero Section-->
             <div
@@ -148,19 +164,18 @@
             </div>
 
             <!--Subtitle and Cards-->
-            <div
-                class="w-[1536px] h-[1136px] flex flex-col gap-[80px] mx-auto max-[1440px]:w-[1280px] max-[1440px]:h-[1192px] max-[744px]:w-[696px] max-[744px]:h-[1660px] max-[375px]:w-full max-[375px]:h-[1801px] max-[375px]:gap-[48px]">
+            <div class="w-[1536px] w-full h-[1136px] flex flex-col gap-[80px] mx-auto max-[1440px]:max-w-[1280px] max-[1440px]:w-full max-[1440px]:h-[1192px] max-[744px]:max-w-[696px]  max-[744px]:h-[1660px] max-[375px]:w-full max-[375px]:h-[1801px] max-[375px]:gap-[48px] justify-center items-center">
                 <section
-                    class="w-[1274px] h-[180px] flex flex-col gap-[24px] mx-auto max-[744px]:w-full max-[744px]:h-[250px] max-[375px]:w-[343px] max-[375px]:h-[308px]">
+                    class=" max-w-[1274px] h-[180px] flex flex-col gap-[24px] mx-auto max-[744px]:w-[696px] text-center max-[375px]:w-[343px] max-[375px]:h-[308px]">
                     <p
-                        class="text-[40px] font-semibold leading-[120%] tracking-[-1px] text-neutral-800 mx-auto text-center max-[744px]:text-[32px] max-[375px]:text-[28px]">
+                        class="flex-wrap text-[40px] font-semibold leading-[120%] tracking-[-1px] text-neutral-800 text-center max-[744px]:text-[32px] max-[375px]:text-[28px] ">
                         The Perfect Platform for
                         <span
                             class="bg-gradient-to-r from-[rgba(175,41,206,1)] to-[rgba(41,49,221,1)] text-transparent bg-clip-text">Delphi
                             and C++Builder Apps</span>
                     </p>
                     <p
-                        class="text-[24px] font-normal text-neutral-600 leading-[150%] tracking-[-1px] text-center max-[744px]:text-[20px] max-[375px]:text-[18px]">
+                        class="flex-wrap text-[24px] font-normal text-neutral-600 leading-[150%] tracking-[-1px] text-center max-[1300px]:text-[22px] max-[825px]:text-[20px] max-[744px]:text-[20px] max-[375px]:text-[18px]">
                         RAD
                         Server supports REST with JSON (or XML) parameter passing and
                         return results. Publish APIs, manage connected users and devices, capture analytics about the
@@ -175,83 +190,83 @@
 
                 <!-- Dual Cards Section-->
                 <section
-                    class="max-w-[1536px] h-[878px] flex border rounded-[16px] max-[744px]:flex-col max-[744px]:h-[1330px] max-[375px]:w-[343px] max-[375px]:h-[1445px] mx-auto">
+                    class="max-w-[1536px] w-full h-[878px] flex rounded-[16px] max-[744px]:flex-col max-[744px]:h-[1330px] max-[375px]:max-w-[343px] max-[375px]:w-full max-[375px]:h-[1445px] mx-auto">
                     <!-- Card 1 -->
                     <div
-                        class="w-[753px] h-[878px] bg-[rgba(206,206,206,0.2)] max-[1440px]:w-[626px] max-[1440px]:h-[932px] max-[744px]:w-[696px] max-[744px]:h-[500px] max-[375px]:w-[343px] max-[375px]:h-[280px]">
+                        class="w-[753px] h-[878px] bg-[rgba(206,206,206,0.2)] max-[1440px]:max-w-[626px] max-[1440px]:w-full max-[1440px]:h-[932px] max-[744px]:max-w-[696px] max-[744px]:w-full max-[744px]:h-[500px] max-[375px]:max-w-[343px] max-[375px]:w-full max-[375px]:h-[280px]">
                         <img src="/images/Server Img.png" alt="server image"
                             class="w-[524px] h-[358.8129577636719px] relative top-[260px] left-[115px] max-[1440px]:top-[287px] max-[1440px]:left-[51px] max-[744px]:top-[71px] max-[744px]:left-[86px] max-[375px]:w-[285px] max-[375px]:h-[195px] max-[375px]:top-[42.83px] max-[375px]:left-[29.5px]">
                     </div>
 
                     <!-- Card 2 -->
                     <div
-                        class="w-[783px] h-[878px] px-[32px] py-[48px] flex flex-col gap-[16px] bg-[rgba(255,255,255,1)] backdrop-blur-[50px] relative [1440px]:w-[654px] max-[1440px]:h-[932px] max-[744px]:w-full max-[744px]:h-[830px] max-[744px]:p-6 max-[375px]:h-[1165px] max-[375px]:p-4">
+                        class="max-w-[783px] w-full h-[878px] px-[32px] py-[48px] flex flex-col gap-[16px] bg-[rgba(255,255,255,1)] backdrop-blur-[50px] relative max-[1440px]:max-w-[654px] max-[1440px]:w-full max-[1440px]:h-[932px] max-[744px]:max-w-[696px] max-[744px]:w-full max-[744px]:h-[830px] max-[744px]:p-6 max-[375px]:h-[1165px] max-[375px]:p-4">
                         <!--Gradinet-->
                         <div
                             class="absolute z-0 top-[215px] left-[130px] w-[612px] h-[612px] bg-gradient-to-r from-transparent via-rose-600 to-transparent opacity-[180%] blur-[500px] rounded-full pointer-events-none">
                         </div>
                         <div
-                            class="w-[719px] h-[782px] flex flex-col gap-[32px] relative z-10 max-[1440px]:w-[590px] max-[1440px]:h-[836px] max-[744px]:w-full max-[744px]:h-[782px] max-[375px]:w-[311px] max-[375px]:h-[1133px]">
+                            class="max-w-[719px] w-full h-[782px] flex flex-col gap-[32px] relative z-10 max-[1440px]:max-w-[590px] max-[1440px]:w-full max-[1440px]:h-[836px] max-[744px]:w-full max-[744px]:h-[782px] max-[375px]:w-[311px] max-[375px]:h-[1133px]">
                             <div
-                                class="w-full h-[92px] flex flex-col gap-[8px] max-[1440px]:w-[590px] max-[744px]:w-full max-[375px]:w-full max-[375px]:h-[146px]">
-                                <h3 class="text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">
+                                class="max-w-full h-[92px] flex flex-col gap-[8px] max-[1440px]:max-w-[590px] max-[1440px]:w-full max-[744px]:w-full max-[375px]:w-full max-[375px]:h-[146px]">
+                                <h3 class="flex-wrap text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">
                                     Modernize</h3>
-                                <p class="text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">Migrate
+                                <p class="flex-wrap text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">Migrate
                                     existing Delphi or C++ client/server business
                                     logic to
                                     a
                                     modern services-based architecture that is secure and scalable.</p>
                             </div>
                             <div
-                                class="w-[719px] h-[92px] flex flex-col gap-[8px] max-[1440px]:w-[590px] max-[744px]:w-full max-[375px]:h-[146px]">
-                                <h3 class="text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">REST
+                                class="max-w-[719px] w-full h-[92px] flex flex-col gap-[8px] max-[1440px]:max-w-[590px] max-[1440px]:w-full max-[744px]:w-full max-[375px]:h-[146px]">
+                                <h3 class="flex-wrap text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">REST
                                     End
                                     Point Publishing</h3>
-                                <p class="text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">Migrate
+                                <p class="flex-wrap text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">Migrate
                                     existing Delphi or C++ client/server business logic to a modern services-based
                                     architecture that is secure and scalable.</p>
                             </div>
                             <div
-                                class="w-[719px] h-[92px] flex flex-col gap-[8px] max-[1440px]:w-[590px]  max-[744px]:w-full max-[375px]:h-[146px]">
-                                <h3 class="text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">REST
+                                class="max-w-[719px] w-full h-[92px] flex flex-col gap-[8px] max-[1440px]:max-w-[590px] max-[1440px]:w-full  max-[744px]:max-w-full max-[375px]:h-[146px]">
+                                <h3 class=" flex-wrap text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">REST
                                     End
                                     Point Publishing</h3>
-                                <p class="text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">An
+                                <p class="flex-wrap text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">An
                                     all-in-one turnkey foundation for your application back end APIs and Services.</p>
                             </div>
                             <div
-                                class="w-[719px] h-[92px] flex flex-col gap-[8px] max-[1440px]:w-[590px] max-[744px]:w-full max-[375px]:h-[119px]">
-                                <h3 class="text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">
+                                class="max-w-[719px] w-full h-[92px] flex flex-col gap-[8px] max-[1440px]:max-w-[590px] max-[1440px]:w-full  max-[744px]:w-full max-[375px]:h-[119px]">
+                                <h3 class="flex-wrap text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">
                                     Integration Middleware</h3>
-                                <p class="text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">
+                                <p class="flex-wrap text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">
                                     Integrations provide out of the box connectivity with external servers, applications
                                     and
                                     services.</p>
                             </div>
                             <div
-                                class="w-[719px] h-[92px] flex flex-col gap-[8px] max-[1440px]:w-[590px] max-[744px]:w-full max-[375px]:h-[173px]">
-                                <h3 class="text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">
+                                class="max-w-[719px] w-full h-[92px] flex flex-col gap-[8px] max-[1440px]:max-w-[590px] max-[1440px]:w-full max-[744px]:w-full max-[375px]:h-[173px]">
+                                <h3 class="flex-wrap text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">
                                     Application Services</h3>
-                                <p class="text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">
+                                <p class="flex-wrap text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">
                                     Ready-to-use built-in services including user directory services and user
                                     management,
                                     push notifications, user location tracking, and built-in data storage.</p>
                             </div>
                             <div
-                                class="w-[719px] h-[92px] flex flex-col gap-[8px] max-[1440px]:w-[590px] max-[744px]:w-full max-[375px]:h-[146px]">
-                                <h3 class="text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">
+                                class="max-w-[719px] w-full h-[92px] flex flex-col gap-[8px]max-[1440px]:max-w-[590px] max-[1440px]:w-full max-[744px]:w-full max-[375px]:h-[146px]">
+                                <h3 class="flex-wrap text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">
                                     Easy-To-Deploy</h3>
-                                <p class="text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">RAD
+                                <p class="flex-wrap text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">RAD
                                     Server
                                     is easy to develop, deploy and operate making it ideally suited for ISVs and OEMs
                                     building re-deployable solutions.</p>
                             </div>
                             <div
-                                class="w-[719px] h-[92px] flex flex-col gap-[8px] max-[1440px]:w-[590px] max-[744px]:w-full max-[375px]:h-[92px]">
-                                <h3 class="text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">
+                                class="max-w-[719px] w-full h-[92px] flex flex-col gap-[8px] max-[1440px]:max-w-[590px] max-[1440px]:w-full  max-[744px]:w-full max-[375px]:h-[92px]">
+                                <h3 class="flex-wrap text-[20px] text-neutral-800 font-semibold leading-[150%] tracking-[0%]">
                                     Delphi
                                     and C++Builder Support</h3>
-                                <p class="text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">RAD
+                                <p class="flex-wrap text-[18px] text-neutral-600 font-normal leading-[150%] tracking-[0%]">RAD
                                     Server
                                     works out of the box with Delphi and C++Builder.</p>
                             </div>
@@ -273,7 +288,7 @@
                         class="text-[40px] font-semibold leading-[150%] tracking-[-1px] text-neutral-800 mx-auto max-[744px]:text-[32px] max-[375px]:text-[28px]">
                         Outstanding
                         <span
-                            class="bg-gradient-to-r from-[rgba(254,59,118,1)] via-[rgba(175,41,206,1)] to-[rgba(41,49,221,1)] text-transparent bg-clip-text max-[744px]:bg-gradient-to-r from-[rgba(41,49,221,1)] via-[rgba(41,49,221,1)] to-[rgba(41,49,221,1)]">Features</span>
+                            class="bg-gradient-to-r from-[rgba(254,59,118,1)] via-[rgba(175,41,206,1)] to-[rgba(41,49,221,1)] text-transparent bg-clip-text max-[744px]:bg-[rgba(41,49,221,1)]">Features</span>
                     </p>
                     <p
                         class="text-[20px] font-normal leading-[150%] tracking-[-1px] text-neutral-600 text-center max-[375px]:text-[18px]">
@@ -603,7 +618,7 @@
                         </p>
                     </div>
                     <div
-                        class="w-full h-[125px] flex flex-col gap-[8px] max-[744px]:h-[215px] text-center max-[375px]:h-[332px]">
+                        class="w-full h-[125px] flex flex-col gap-[8px] max-[744px]:h-[215px] text-center max-[375px]:h-[332px] max-[375px]:h-[343px]">
                         <p
                             class="text-[24px] text-neutral-800 font-semibold leading-[150%] tracking-[-1px] mx-auto max-[375px]:text-[18px]">
                             RAD
@@ -691,41 +706,45 @@
 
 
                 <!--Table Display for screen less than 375 landing page-->
-
-                <div class="hidden max-[375px]:block w-[343px] h-[1488px] flex-col gap-[24px] mx-auto">
-
+                <div class="hidden max-[375px]:flex w-[343px] h-[1488px] flex-col gap-[24px]">
                     <!--table 1-->
-                    <table class="w-full h-[480px] gap-[8px] ">
+                    <table class="w-full h-[480px] gap-[8px]">
                         <thead>
                             <tr class="h-[64px] text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
-                                <td class="w-1/2 bg-[hsla(210,40%,96%,0.6)] p-[16px] text-left">Buying Options</td>
-                                <td class="w-1/2 bg-[hsla(194,62%,76%,1)] p-[16px] text-center">RAD Server Lite</td>
+                                <td class="w-1/2 bg-[hsla(210,40%,96%,0.6)] p-[16px] text-left h-[64px]">Buying Options
+                                </td>
+                                <td class="w-1/2 bg-[hsla(194,62%,76%,1)] p-[16px] text-center h-[64px] ">RAD Server
+                                    Lite</td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
-                                <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Unlimited users per site</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓ With Limited Throughput</td>
+                                <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left ">Unlimited users per site</td>
+                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center "><i
+                                        class="fa-solid fa-check"></i> <br> With Limited Throughput</td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
-                                <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Single Site</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left ">Single Site</td>
+                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center "> </td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Single/Multi-Site</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center"><i
+                                        class="fa-solid fa-check"></i></td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
-                                <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">REST Endpoint Publishing</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left ">REST Endpoint Publishing</td>
+                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center "><i
+                                        class="fa-solid fa-check"></i></td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Integration Middleware</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center"></td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Application Services</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center"><i
+                                        class="fa-solid fa-check"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -741,27 +760,32 @@
                         <tbody>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Unlimited users per site</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(231,242,213,1)] p-[16px] text-center"><i
+                                        class="fa-solid fa-check"></i></td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Single Site</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(231,242,213,1)] p-[16px] text-center"><i
+                                        class="fa-solid fa-check"></i></td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Single/Multi-Site</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(231,242,213,1)] p-[16px] text-center"></td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">REST Endpoint Publishing</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(231,242,213,1)] p-[16px] text-center"><i
+                                        class="fa-solid fa-check"></i></td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Integration Middleware</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(231,242,213,1)] p-[16px] text-center"><i
+                                        class="fa-solid fa-check"></i></td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Application Services</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(231,242,213,1)] p-[16px] text-center"><i
+                                        class="fa-solid fa-check"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -772,50 +796,53 @@
                         <thead>
                             <tr class="h-[64px] text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="w-1/2 bg-[hsla(210,40%,96%,0.6)] p-[16px] text-left">Buying Options</td>
-                                <td class="w-1/2 bg-[hsla(194,62%,76%,1)] p-[16px] text-center">RAD Server Lite</td>
+                                <td class="w-1/2 bg-[rgba(254,226,147,1)] p-[16px] text-center">RAD Server Lite</td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Unlimited users per site</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓ With Limited Throughput</td>
+                                <td class="bg-[rgba(254,240,198,1)] p-[16px] text-center"><i
+                                        class="fa-solid fa-check"></i></td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Single Site</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(254,240,198,1)] p-[16px] text-center"></td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Single/Multi-Site</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(254,240,198,1)] p-[16px] text-center">✓</td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">REST Endpoint Publishing</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(254,240,198,1)] p-[16px] text-center"><i
+                                        class="fa-solid fa-check"></i></td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Integration Middleware</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(254,240,198,1)] p-[16px] text-center"><i
+                                        class="fa-solid fa-check"></i></td>
                             </tr>
                             <tr class="text-[16px] leading-[150%] tracking-[0%] max-[744px]:text-[14px]">
                                 <td class="bg-[rgba(255,255,255,0.6)] p-[16px] text-left">Application Services</td>
-                                <td class="bg-[hsla(195,64%,91%,1)] p-[16px] text-center">✓</td>
+                                <td class="bg-[rgba(254,240,198,1)] p-[16px] text-center"><i
+                                        class="fa-solid fa-check"></i></td>
                             </tr>
                         </tbody>
                     </table>
-
-                    
-
 
                 </div>
             </div>
 
             <!--Join Community Section-->
-            <div class="max-w-full h-[640px] bg-[rgba(255,255,255,0.4)] relative max-[744px]:max-h-[739px]">
+            <div
+                class="max-w-full h-[640px] bg-[rgba(255,255,255,0.4)] relative max-[744px]:max-h-[739px] max-[375px]:w-[375px] max-[375px]:h-[665px]">
                 <div
-                    class="w-[633px] h-[248px] relative top-[196px] left-[192px] flex flex-col gap-[32px] max-[1440px]:w-[514px] max-[1440px]:h-[244px] max-[1440px]:top-[198px] max-[1440px]:left-[80px] max-[744px]:w-[696px] max-[744px]:h-[193px] max-[744px]:top-[64px] max-[744px]:left-[24px]">
-                    <div class="w-full h-[164px] flex flex-col gap-[8px] max-[744px]:h-[109px] ">
+                    class="w-[633px] h-[248px] relative top-[196px] left-[192px] flex flex-col gap-[32px] max-[1440px]:w-[514px] max-[1440px]:h-[244px] max-[1440px]:top-[198px] max-[1440px]:left-[80px] max-[744px]:w-[696px] max-[744px]:h-[193px] max-[744px]:top-[64px] max-[744px]:left-[24px] max-[375px]:w-[343px] max-[375px]:h-[314px] max-[375px]:top-[48px] max-[375px]:left-[16px]">
+                    <div
+                        class="w-full h-[164px] flex flex-col gap-[8px] max-[744px]:h-[109px] max-[375px]:w-full max-[375px]:h-[170px]">
                         <p
-                            class="text-[40px] font-semibold leading-[120%] tracking-[-1px] text-neutral-800 max-[744px]:text-[32px] max-[744px]:text-center">
+                            class="text-[40px] font-semibold leading-[120%] tracking-[-1px] text-neutral-800 max-[744px]:text-[32px] max-[744px]:text-center max-[375px]:text-[28px]">
                             Join Our <br class="max-[744px]:hidden">
                             <span
                                 class="bg-gradient-to-r from-[rgba(254,59,118,1)] via-[rgba(175,41,206,1)] to-[rgba(41,49,221,1)] text-transparent bg-clip-text max-[744px]:bg-gradient-to-r from-[rgba(254,59,118,1)] via-[rgba(175,41,206,1)] via-[rgba(41,49,221,1)] to-[rgba(41,49,221,1)]  ">Global
@@ -832,15 +859,16 @@
                         </span>
                     </div>
 
-                    <div class="w-[491px] h-[52px] gap-[10px] flex max-[1440px]:h-[48px] max-[744px]:mx-auto">
+                    <div
+                        class="w-[491px] h-[52px] gap-[10px] flex max-[1440px]:h-[48px] max-[744px]:mx-auto max-[375px]:w-[343px] max-[375px]:h-[112px] max-[375px]:flex-col">
                         <input type="email" placeholder="Your Email"
-                            class="px-[20px] py-[18px] border border-neutral-300 rounded-[8px] w-[354px] h-full focus:outline-none max-[1440px]:w-[361px] max-[1440px]:py-[12px]">
+                            class="px-[20px] py-[18px] border border-neutral-300 rounded-[8px] w-[354px] h-full focus:outline-none max-[1440px]:w-[361px] max-[1440px]:py-[12px] max-[375px]:w-[343px] max-[375px]:h-[52px]">
                         <button
-                            class="px-[24px] py-[14px] border border-black rounded-[8px] bg-neutral-800 text-white text-[16px] font-medium w-[121px] h-full leading-[24px] tracking-[0px] max-[1440px]:py-[12px]">Subscribe</button>
+                            class="px-[24px] py-[14px] border border-black rounded-[8px] bg-neutral-800 text-white text-[16px] font-medium w-[121px] h-full leading-[24px] tracking-[0px] max-[1440px]:py-[12px] max-[375px]:w-[343px] max-[375px]:h-[52px]">Subscribe</button>
                     </div>
                 </div>
 
-                <img class="w-[882px] h-[438.37px] relative top-[-152px] left-[845px] max-[1440px]:w-[734px] max-[1440px]:h-[364.81px] max-[1440px]:top-[-138px] max-[1440px]:left-[626px] max-[744px]:w-[696px] max-[744px]:h-[300px] max-[744px]:top-[95px] max-[744px]:left-[24px]"
+                <img class="w-[882px] h-[438.37px] relative top-[-152px] left-[845px] max-[1440px]:w-[734px] max-[1440px]:h-[364.81px] max-[1440px]:top-[-138px] max-[1440px]:left-[626px] max-[744px]:w-[696px] max-[744px]:h-[300px] max-[744px]:top-[95px] max-[744px]:left-[24px] max-[375px]:w-[343px] max-[375px]:h-[209px] max-[375px]:top-[110px] max-[375px]:left-[16px]"
                     src="/images/Frame.png" alt="">
 
 
@@ -848,25 +876,32 @@
 
             <!--Footer Section-->
             <Footer
-                class="w-full h-[543px] flex flex-col justify-between px-[48px] py-[80px] bg-[rgba(255,255,255,0.6)] max-[1440px]:h-[593px] max-[744px]:h-[871px] max-[744px]:gap-[40px]">
+                class="w-full h-[543px] flex flex-col justify-between px-[48px] py-[80px] bg-[rgba(255,255,255,0.6)] max-[1440px]:h-[593px] max-[744px]:h-[871px] max-[744px]:gap-[40px] max-[375px]:w-[375px] max-[375px]:h-[1181px] max-[375px]:gap-[32px] max-[375px]:px-4 max-[375px]:py-8 max-[375px]:flex-col max-[375px]:mt-">
 
-                <div class="w-full h-[543px] flex gap-[16px] max-[1440px]:flex-col max-[1440px]:gap-[48px]">
+                <div class="w-full h-[543px] flex gap-[16px] max-[1440px]:flex-col max-[1440px]:gap-[48px] ">
                     <img src="/images/logoimg.png" alt="rad logo" class="w-[447px] h-[35px] flex gap-[16px]">
 
                     <div
-                        class="w-[1281px] h-[350px] grid grid-cols-6 justify-between max-[744px]:w-[695px] max-[744px]:h-[702px] max-[744px]:grid-cols-3 max-[744px]:grid-rows-2 gap-[48px]">
+                        class="w-[1281px] h-[350px] grid grid-cols-6 justify-between max-[744px]:w-[695px] max-[744px]:h-[702px] max-[744px]:grid-cols-3 max-[744px]:grid-rows-2 gap-[48px] max-[375px]:w-[343px] max-[375px]:h-[956px] max-[375px]:grid-cols-2 max-[375px]:gap-0">
                         <div
-                            class="w-[119px] h-[222px] flex flex-col gap-[24px] max-[744px]:w-[215px] max-[744px]:h-[222px]">
+                            class="w-[119px] h-[222px] flex flex-col gap-[24px] max-[744px]:w-[215px] max-[744px]:h-[222px] max-[375px]:w-[163.5px] max-[375px]:h-[320px] max-[375px]:gap-4">
                             <h3 class="text-[20px] font-bold text-gray-800 leading-[20px] tracking-[0px]">Products</h3>
                             <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">RAD Studio</a>
                             <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Delphi</a>
                             <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">C++Builder</a>
                             <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">InterBase</a>
                             <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">RAD Server</a>
+
+                            <div class="hidden w-[163.5px] flex-col gap-[16px] h-[60px] max-[375px]:flex mt-3">
+                                <h3 class="text-[20px] font-semibold text-gray-800 leading-[20px] tracking-[0px]">
+                                    Community
+                                </h3>
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Blogs</a>
+                            </div>
                         </div>
 
                         <div
-                            class="w-[222px] h-[302px] flex flex-col gap-[24px] max-[744px]:w-[215px] max-[744px]:h-[318px]">
+                            class="w-[222px] h-[302px] flex flex-col gap-[24px] max-[744px]:w-[215px] max-[744px]:h-[318px] max-[375px]:w-[163.5px] max-[375px]:h-[372px] max-[375px]:gap-4">
                             <h3 class="text-[20px] font-semibold text-gray-800 leading-[20px] tracking-[0px]">Free Tools
                             </h3>
                             <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">C++ Compiler</a>
@@ -884,7 +919,7 @@
                         </div>
 
                         <div
-                            class="w-[171px] h-[342px] flex flex-col gap-[24px] max-[744px]:w-[215px] max-[744px]:h-[342px]">
+                            class="w-[171px] h-[342px] flex flex-col gap-[24px] max-[744px]:w-[215px] max-[744px]:h-[342px] max-[375px]:w-[163.5px] max-[375px]:h-[364px] max-[375px]:gap-4">
                             <h3 class="text-[20px] font-semibold text-gray-800 leading-[20px] tracking-[0px]">Resoueces
                             </h3>
                             <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Events and
@@ -901,13 +936,13 @@
                                 Development</a>
                         </div>
                         <div
-                            class="w-[110px] h-[62px] flex flex-col gap-[24px] max-[744px]:w-[215px] max-[744px]:h-[62px]">
+                            class="w-[110px] h-[62px] flex flex-col gap-[24px] max-[744px]:w-[215px] max-[744px]:h-[62px] max-[375px]:hidden ">
                             <h3 class="text-[20px] font-semibold text-gray-800 leading-[20px] tracking-[0px]">Community
                             </h3>
                             <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Blogs</a>
                         </div>
                         <div
-                            class="w-[100px] h-[262px] flex flex-col gap-[24px] max-[744px]:w-[215px] max-[744px]:h-[262px]">
+                            class="w-[100px] h-[262px] flex flex-col gap-[24px] max-[744px]:w-[215px] max-[744px]:h-[262px] max-[375px]:w-[163.5px] max-[375px]:h-[260px] max-[375px]:gap-4">
                             <h3 class="text-[20px] font-semibold text-gray-800 leading-[20px] tracking-[0px]">Company
                             </h3>
                             <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">About Us</a>
@@ -919,7 +954,7 @@
                             <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Logo</a>
                         </div>
                         <div
-                            class="w-[205px] h-[142px] flex flex-col gap-[24px] max-[744px]:w-[215px] max-[744px]:h-[142px]">
+                            class="w-[205px] h-[142px] flex flex-col gap-[24px] max-[744px]:w-[215px] max-[744px]:h-[142px] max-[375px]:w-[343px] max-[375px]:h-[143px] max-[375px]:gap-4">
                             <h3 class="text-[20px] font-semibold text-gray-800 leading-[20px] tracking-[0px]">Get in
                                 Touch
                             </h3>
@@ -936,9 +971,6 @@
 
             </Footer>
         </div>
-        </class=>
-
-
 </body>
 
 </html>

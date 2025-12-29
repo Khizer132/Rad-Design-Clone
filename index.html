@@ -34,26 +34,26 @@
 
 </head>
 
-<body style='font-family: "Archivo", sans-serif;' >
+<body style='font-family: "Archivo", sans-serif;' class="overflow-x-hidden">
 
     <!--Wrapper-->
-    <div class="overflow-hidden relative">
+    <div class="overflow-hidden  relative ">
 
         <!--Gradients for 1920 Screen-->
         <div
-            class="absolute inset-0 top-[772px] left-[-127px] max-[1440px]:top-[811px] max-[1440px]:left-[-139px] max-[744px]:left-[-128px] max-[376px]:left-[-379px]  max-w-[440px] w-full h-[440px]  border border-white bg-indigo-500 opacity-[5%] blur-[300px] rounded-full ">
+            class="absolute inset-0 -z-10 top-[772px] left-[-127px] max-[1440px]:top-[811px] max-[1440px]:left-[-139px] max-[744px]:left-[-128px] max-[376px]:left-[-379px]  max-w-[440px] w-full h-[440px]  border border-white bg-indigo-500 opacity-[5%] blur-[300px] rounded-full ">
         </div> <!--Eclipse 13 -->
 
         <div
-            class="absolute inset-0 top-[600px] left-[1301px] max-[1440px]:top-[574px] max-[1440px]:left-[1028px] max-[744px]:top-[440px] max-[744px]:left-[464px] max-[376px]:left-[224px]  max-w-[869px] w-full h-[869px] max-w-[869px] w-full max-[1440px]:top-[574px] max-[1028px]:left-[828px] border border-white bg-rose-600 opacity-[5%] blur-[150px] rounded-full ">
+            class="absolute inset-0 -z-10 top-[600px] left-[1301px] max-[1440px]:top-[574px] max-[1440px]:left-[1028px] max-[744px]:top-[440px] max-[744px]:left-[464px] max-[376px]:left-[224px]  max-w-[869px] w-full h-[869px] max-w-[869px] w-full max-[1440px]:top-[574px] max-[1028px]:left-[828px] border border-white bg-rose-600 opacity-[5%] blur-[150px] rounded-full ">
         </div> <!--Eclipse 14 -->
 
         <div
-            class="absolute inset-0  top-[160px] left-[-280px] max-w-[906px] w-full h-[350px]  border border-white bg-cyan-500 opacity-[10%] blur-[300px]  max-[1440px]:top-[100px] max-[1440px]:blur-[100px] max-[744px]:left-[-480px]">
+            class="absolute inset-0 -z-10  top-[160px] left-[-280px] max-w-[906px] w-full h-[350px]  border border-white bg-cyan-500 opacity-[10%] blur-[300px]  max-[1440px]:top-[100px] max-[1440px]:blur-[100px] max-[744px]:left-[-480px]">
         </div> <!--Eclipse 15 header scetion-->
 
         <div
-            class="absolute inset-0 top-[100px] left-[1300px] h-[407px] max-w-[869px] border border-white w-full max-[1440px]:top-[-243px] max-[1440px]:left-[828px]  border border-white bg-rose-600 opacity-[10%] blur-[300px] rounded-full ">
+            class="absolute inset-0 -z-10 top-[100px] left-[1300px] h-[407px] max-w-[869px] border border-white w-full max-[1440px]:top-[-243px] max-[1440px]:left-[828px]  border border-white bg-rose-600 opacity-[10%] blur-[300px] rounded-full ">
         </div> <!--Eclipse 14 header scection-->
 
         <div
@@ -121,7 +121,7 @@
 
 
         <!--Haeader/Navbar Section-->
-        <div class="max-w-screen w-full flex flex-col ">
+        <div class="max-w-screen w-full flex flex-col z-0">
 
             <!--Utility bar-->
             <div
@@ -131,7 +131,8 @@
                     <p
                         class="max-w-[519px] w-full font-light justify-center max-[1440px]:max-w-[454px] max-[1440px]:w-full max-[743px]:max-w-[343px] max-[743px]:w-full max-[610px]:max-w-[343px] max-[610px]:w-full max-[610px]:mx-auto text-center">
                         See what’s new in
-                        <span class="font-medium">Delphi, C++ Builder, and RAD Studio <span class="max-[743px]:hidden">
+                        <span class="font-medium">Delphi, C++ Builder, and RAD Studio <span
+                                class="max-[743px]:hidden hover:text-blue">
                                 Watch the Replay</span></span>
                     </p>
                     <a href=""
@@ -143,16 +144,19 @@
                     class="max-w-[666px] w-full flex gap-[32px] max-[1500px]:max-w-[563px] max-[1500px]:w-full max-[1500px]:gap-[16px] justify-end max-[1300px]:max-w-[92px] max-[1300px]:w-full max-[610px]:mx-auto">
                     <div
                         class="max-w-[542px] w-full gap-[32px]  flex text-[16px] leading-[150%] tracking-[0px] hidden min-[1300px]:flex max-[1500px]:max-w-[439px] max-[1500px]:w-full max-[1500px]:text-[14px]  max-[1500px]:gap-[16px]">
-                        <a href="" class="">My Downloads</a>
-                        <a href="" class="">Upgarde Center</a>
-                        <a href="" class=" ">My Customer Portal</a>
-                        <a href="" class="">Contact Us</a>
+                        <a href="" class=" text-white hover:text-gray-200">My Downloads</a>
+                        <a href="" class="text-white hover:text-gray-200">Upgarde Center</a>
+                        <a href="" class="text-white hover:text-gray-200 ">My Customer Portal</a>
+                        <a href="" class="text-white hover:text-gray-200">Contact Us</a>
                     </div>
 
                     <div class="max-w-[92px] w-full flex gap-[16px] ">
-                        <img src="/images/header and footer section/Search.svg" class="max-w-[20px] w-full cursor-pointer " alt="">
-                        <img src="/images/header and footer section/Group 1000003433.svg" class="max-w-[20px] w-full cursor-pointer " alt="">
-                        <img src="/images/header and footer section/Language.svg" class="max-w-[20px] w-full cursor-pointer " alt="">
+                        <img src="/images/header and footer section/Search.svg"
+                            class="max-w-[20px] w-full cursor-pointer" alt="">
+                        <img src="/images/header and footer section/Group 1000003433.svg"
+                            class="max-w-[20px] w-full cursor-pointer " alt="">
+                        <img src="/images/header and footer section/Language.svg"
+                            class="max-w-[20px] w-full cursor-pointer " alt="">
                     </div>
 
                 </div>
@@ -162,35 +166,40 @@
             <div
                 class="max-w-[1920px] w-full mx-auto justify-between px-[196px] py-[16px] bg-[hsla(0,0%,100%,0.36)] backdrop-blur-[32px] flex max-[1450px]:px-[80px]  max-[1200px]:px-20 max-[840px]:px-6  max-[376px]:px-4 max-[376px]:py-3">
                 <div class="max-w-[280px] w-full ">
-                    <img src="/images/header and footer section/Rad logo.png" alt="rad logo" class="max-w-[138px] w-full cursor-pointer pt-2">
+                    <img src="/images/header and footer section/Rad logo.png" alt="rad logo"
+                        class="max-w-[138px] w-full cursor-pointer pt-2">
                 </div>
 
                 <div class="max-w-[495px] w-full my-auto min-[1300px]:flex gap-[24px] hidden ">
                     <a href=""
-                        class="max-w-[77px] w-full flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal align-middle">Products
-                        <img src="/images/header and footer section/Dropdown-arrow.png" class="max-w-[16px] w-full" alt="">
+                        class="max-w-[77px] w-full flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal align-middle hover:text-[#055e05]">Products
+                        <img src="/images/header and footer section/Dropdown-arrow.png" class="max-w-[16px] w-full"
+                            alt="">
                     </a>
                     <a href=""
-                        class="max-w-[85px] w-full flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal">Free
+                        class="max-w-[85px] w-full flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal hover:text-[#055e05]">Free
                         Tools
-                        <img src="/images/header and footer section/Dropdown-arrow.png" class="max-w-[16px] w-full" alt="">
+                        <img src="/images/header and footer section/Dropdown-arrow.png" class="max-w-[16px] w-full"
+                            alt="">
                     </a>
                     <a href=""
-                        class="max-w-[29px] w-full flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal">Blog</a>
+                        class="max-w-[29px] w-full flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal hover:text-[#055e05]">Blog</a>
                     <a href=""
-                        class="max-w-[88px] w-full flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal">Resources
-                        <img src="/images/header and footer section/Dropdown-arrow.png" class="max-w-[16px] w-full" alt="">
+                        class="max-w-[88px] w-full flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal hover:text-[#055e05]">Resources
+                        <img src="/images/header and footer section/Dropdown-arrow.png" class="max-w-[16px] w-full"
+                            alt="">
                     </a>
                     <a href=""
-                        class="max-w-[31px] w-full flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal">Getit</a>
-                    <a href="" class="max-w-[65px] w-full flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal">New
+                        class="max-w-[31px] w-full flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal hover:text-[#055e05]">Getit</a>
+                    <a href=""
+                        class="max-w-[65px] w-full flex gap-[4px] text-[14px] leading-[150%] tracking-[0px] font-normal hover:text-[#055e05]">New
                         Tools</a>
                 </div>
 
                 <div
                     class="max-w-[280px] w-full flex gap-[8px] font-medium text-[14px] leading-[22px] tracking-[0px] max-[1300px]:max-w-[320px] max-[1300px]:w-full max-[376px]:max-w-[139px] max-[376px]:w-full justify-end">
                     <button
-                        class="px-[16px] py-[8px] flex gap-[10px] border-none max-[1300px]:max-w-[76px] max-[1300px]:w-full max-[650px]:hidden">SignIn</button>
+                        class="px-[16px] py-[8px] flex gap-[10px] border-none max-[1300px]:max-w-[76px] max-[1300px]:w-full max-[650px]:hidden hover:bg-[linear-gradient(77.38deg,_#FE3B76_9.15%,_#AF29CE_49.65%,_#2931DD_90.16%)] hover:text-transparent hover:bg-clip-text">SignIn</button>
                     <button
                         class="px-[16px] py-[8px] flex gap-[10px] border border-neutral-800 rounded-[8px] max-[1300px]:max-w-[92px] max-[1300px]:w-full  max-[650px]:hidden hover:text-white hover:bg-neutral-800">Buy
                         Now</button>
@@ -208,10 +217,10 @@
                 class=" max-w-[1920px] w-full  mx-auto px-[196px] py-[16px] justify-between flex max-[1450px]:px-[80px] max-[744px]:flex-col  max-[744px]:gap-4  max-[744px]:px-6  max-[400px]:px-2  ">
                 <div
                     class="max-w-[228px] w-full flex gap-[8px] font-normal text-neutral-800 text-[14px] leading-[150%] tracking-[0px] max-[744px]:mx-auto">
-                    <a class="flex gap-[10px] font-medium text-[14px] leading-[150%] tracking-[0px] hover:text-rose-600! "
+                    <a class="flex gap-[10px] font-medium text-[14px] leading-[150%] tracking-[0px] hover:text-rose-600 "
                         href="">Home</a>
                     <img src="/images/header and footer section/Frame.svg" class="max-w-[12px] w-full my-auto" alt="">
-                    <a class="flex gap-[10px] font-medium text-[14px] leading-[150%] tracking-[0px] hover:text-rose-600!"
+                    <a class="flex gap-[10px] font-medium text-[14px] leading-[150%] tracking-[0px] hover:text-rose-600"
                         href="">Products</a>
                     <img src="/images/header and footer section/Frame.svg" class="max-w-[12px] w-full my-auto" alt="">
                     <a class="flex gap-[10px] text-rose-600 font-medium text-[14px] leading-[150%] tracking-[0px]"
@@ -219,17 +228,21 @@
                 </div>
                 <div
                     class="flex max-w-[433px] w-full gap-[8px] font-medium text-neutral-800 text-[14px] leading-[150%] tracking-[0px] justify-end max-[1440px]:max-w-[342px] max-[1440px]:w-full max-[744px]:mx-auto max-[360px]:text-[12px] max-[744px]:justify-center">
-                    <a class="underline flex gap-[10px]" href="">Request a Demo</a>
+                    <a class="underline flex gap-[10px] hover:no-underline hover:bg-[linear-gradient(77.38deg,_#FE3B76_9.15%,_#AF29CE_49.65%,_#2931DD_90.16%)] hover:text-transparent hover:bg-clip-text"
+                        href="">Request a Demo</a>
                     <span class="font-semibold text-neutral-400">-</span>
-                    <a class="underline flex gap-[10px]" href="">Request a Quote</a>
+                    <a class="underline flex gap-[10px] hover:no-underline hover:bg-[linear-gradient(77.38deg,_#FE3B76_9.15%,_#AF29CE_49.65%,_#2931DD_90.16%)] hover:text-transparent hover:bg-clip-text"
+                        href="">Request a Quote</a>
                     <span class="font-semibold text-neutral-400">-</span>
-                    <a class="underline flex gap-[10px]" href="">Contact Sales</a>
+                    <a class="underline flex gap-[10px] hover:no-underline hover:bg-[linear-gradient(77.38deg,_#FE3B76_9.15%,_#AF29CE_49.65%,_#2931DD_90.16%)] hover:text-transparent hover:bg-clip-text"
+                        href="">Contact Sales</a>
                 </div>
             </div>
         </div>
 
         <!--Main Section-->
-        <div class="max-w-[1920px] w-full relative top-[80px] gap-[128px]  flex flex-col mx-auto  max-[1440px]:gap-[80px] max-[1440px]:top-[80px]  max-[744px]:top-[48px]  max-[376px]:top-[48px] overflow-x-hidden">
+        <div
+            class="max-w-[1920px] w-full relative top-[80px] gap-[128px]  flex flex-col z-0 mx-auto  max-[1440px]:gap-[80px] max-[1440px]:top-[80px]  max-[744px]:top-[48px]  max-[376px]:top-[48px] overflow-x-hidden">
 
             <div
                 class="max-w-[1920px] w-full flex flex-col gap-[128px] px-20 max-[1200px]:px-20 max-[744px]:px-6  max-[376px]:px-4 max-[1440px]:gap-[80px] ">
@@ -517,7 +530,7 @@
                     </div>
                 </div>
 
-                <!-- REST Endpoint Publishing Section -->
+                <!-- REP Section -->
                 <div
                     class="max-w-[1536px] w-full flex flex-col gap-[80px] mx-auto max-[1440px]:max-w-[1280px] max-[1440px]:w-full  max-[744px]:max-w-[696px] max-[744px]:w-full max-[376px]:max-w-[343px] max-[376px]:w-full max-[376px]:gap-[32px]">
                     <div
@@ -1087,7 +1100,8 @@
                 <div
                     class="max-w-[1760px] w-full flex gap-[32px] max-[1600px]:max-w-[1280px] max-[1600px]:w-full  max-[1600px]:flex-col max-[1600px]:gap-[48px] mx-auto px-6 max-[1600px]:px-4 ">
                     <div class="max-w-[447px] w-full ">
-                        <img src="/images/header and footer section/Rad logo.png" alt="rad logo" class="max-w-[202px] w-full cursor-pointer ">
+                        <img src="/images/header and footer section/Rad logo.png" alt="rad logo"
+                            class="max-w-[202px] w-full cursor-pointer ">
                     </div>
 
 
@@ -1098,13 +1112,13 @@
                             <h3 class="text-[20px] font-bold text-gray-800 leading-[20px] tracking-[0px]">Products
                             </h3>
                             <div class="flex flex-col gap-[24px]">
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">RAD
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">RAD
                                     Studio</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Delphi</a>
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Delphi</a>
                                 <a href=""
-                                    class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">C++Builder</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">InterBase</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">RAD
+                                    class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">C++Builder</a>
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">InterBase</a>
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">RAD
                                     Server</a>
                             </div>
 
@@ -1114,7 +1128,7 @@
                                     Community
                                 </h3>
                                 <div class="flex flex-col gap-[24px]">
-                                    <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Blogs</a>
+                                    <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Blogs</a>
                                 </div>
 
                             </div>
@@ -1126,21 +1140,21 @@
                                 Tools
                             </h3>
                             <div class="flex flex-col gap-[24px]">
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">C++
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">C++
                                     Compiler</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] ">C++Builder
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">C++Builder
                                     Community
                                     ED</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">DELPHI
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">DELPHI
                                     Community
                                     ED</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] ">REST
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">REST
                                     Debugger</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">INTERBASE
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">INTERBASE
                                     Developer Edition</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">FMX
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">FMX
                                     STENCILS</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">DEV-C++</a>
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">DEV-C++</a>
                             </div>
 
                         </div>
@@ -1151,21 +1165,21 @@
                                 Resources
                             </h3>
                             <div class="flex flex-col gap-[24px]">
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Events
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Events
                                     and
                                     Webinars</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">White
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">White
                                     Papers</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Success
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Success
                                     Strories</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">For
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">For
                                     Educators</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Partners</a>
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Partners</a>
                                 <a href=""
-                                    class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Certifications</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">MVP
+                                    class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Certifications</a>
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">MVP
                                     Program</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Web App
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Web App
                                     Development</a>
 
                             </div>
@@ -1177,7 +1191,7 @@
                                 Community
                             </h3>
                             <div class="flex flex-col gap-[24px]">
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Blogs</a>
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Blogs</a>
                             </div>
 
                         </div>
@@ -1187,16 +1201,16 @@
                                 Company
                             </h3>
                             <div class="flex flex-col gap-[24px]">
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">About
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">About
                                     Us</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Contact
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Contact
                                     Us</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Contact
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Contact
                                     Sales</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Legal</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Privacy
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Legal</a>
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Privacy
                                     Policy</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">Logo</a>
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">Logo</a>
                             </div>
 
                         </div>
@@ -1205,14 +1219,14 @@
                             <h3 class="text-[20px] font-semibold text-gray-800 leading-[20px] tracking-[0px]">Get in
                                 Touch
                             </h3>
-                            <div class="flex flex-col gap-[24px]">
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">US: 1
+                            <div class="flex flex-col gap-[24px] ">
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">US: 1
                                     (512)
                                     226-8080</a>
-                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">DE: +49
+                                <a href="" class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">DE: +49
                                     (0)6103-3866-100</a>
                                 <a href=""
-                                    class="text-[16px] text-gray-600 leading-[16px] tracking-[0px]">info@embarcadero.com</a>
+                                    class="text-[16px] text-gray-600 leading-[16px] tracking-[0px] hover:text-[#055e05]">info@embarcadero.com</a>
                             </div>
 
                         </div>
@@ -1228,10 +1242,14 @@
                         2022 Embarcadero Inc. All Rights Reserved</p>
 
                     <div class="max-w-[864px] w-full flex gap-[24px] justify-end max-[640px]:justify-center">
-                        <button><img src="images/header and footer section/logo-twitter.png" class=" max-w-[24px] w-full" alt=""></button>
-                        <button><img src="images/header and footer section/logo-facebook.png" class=" max-w-[24px] w-full" alt=""></button>
-                        <button><img src="images/header and footer section/logo-dribbble.png" class=" max-w-[24px] w-full" alt=""></button>
-                        <button><img src="images/header and footer section/logo-github.png" class=" max-w-[24px] w-full" alt=""></button>
+                        <button><img src="images/header and footer section/logo-twitter.png"
+                                class=" max-w-[24px] w-full" alt=""></button>
+                        <button><img src="images/header and footer section/logo-facebook.png"
+                                class=" max-w-[24px] w-full" alt=""></button>
+                        <button><img src="images/header and footer section/logo-dribbble.png"
+                                class=" max-w-[24px] w-full" alt=""></button>
+                        <button><img src="images/header and footer section/logo-github.png" class=" max-w-[24px] w-full"
+                                alt=""></button>
                     </div>
 
 
